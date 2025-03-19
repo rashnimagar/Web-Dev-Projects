@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=M+PLUS+Rounded+1c&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("bookshop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content {
+  text-align: center;
+}
+
+.container .content .btn {
+  height: 30px;
+  width: 350px;
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.container .content .btn::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.container .content .typing-container {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 4s steps(20, end) forwards, blink 1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

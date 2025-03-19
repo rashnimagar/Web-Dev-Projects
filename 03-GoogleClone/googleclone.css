@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Nav start */
+
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-section {
+  list-style-type: none;
+  padding-right: 20px;
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Nav links */
+.nav-section li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+/* Icons Styling */
+.nav-section li i {
+  font-size: 18px;
+  color: #000;
+}
+
+/* Profile Image */
+.nav-section li a img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Nav end */
+
+/* Main Content start */
+.container {
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search bar */
+.container .logo {
+  font-size: 5rem;
+  font-weight: bold;
+  word-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+/* Search button */
+.container .search {
+  border: 2px solid rgb(147, 140, 140);
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  margin: 10px 25px;
+  width: 650px;
+  height: 48px;
+  background-color: #f1f3f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.container .search .search-btn {
+  border: none;
+  flex: 1;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.container .search i {
+  font-size: 20px;
+  color: rgb(42, 41, 41);
+}
+
+/* Shortcut */
+.container .shortcut-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four shortcuts per row*/
+  place-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.container .shortcut-container .shortcut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90px; /* Set fixed width*/
+  transition: transform 0.3s ease;
+}
+
+.shortcut a {
+  text-decoration: none;
+  color: #000;
+}
+
+.shortcut-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ecd6d6;
+  padding: 0 25px;
+  border-radius: 50%; /* circular background*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.shortcut-icon .fa-youtube {
+  color: red;
+}
+
+.shortcut-icon .fa-instagram {
+  color: rgb(173, 40, 62);
+}
+
+.shortcut-icon .fa-facebook {
+  color: darkblue;
+}
+
+.shortcut p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.shortcut:hover {
+  transform: scale(1.1);
+}
+
+.shortcut-icon:hover {
+  background-color: #dcdcdc;
+}
